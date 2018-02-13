@@ -6,4 +6,8 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      -run: npm test
+          name: Greeting
+          command: echo Hello, world.
+      - run: npm test
+          name: Print the Current Time
+          command: date
