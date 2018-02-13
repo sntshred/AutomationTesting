@@ -2,12 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: circleci/node:8.9.2
     steps:
       - checkout
       - run: npm install
-          name: Greeting
-          command: echo Hello, world.
+  test:
+    docker:
+      - image: circleci/node:8.9.2
+    steps:
+      - checkout
       - run: npm test
-          name: Print the Current Time
-          command: date
