@@ -5,9 +5,9 @@ jobs:
       - image: debian:stretch
     steps:
       - checkout
-      - run:
+      - run: npm install
           name: Greeting
           command: echo Hello, world.
-      - run:
+      - run: npm test
           name: Print the Current Time
           command: date
