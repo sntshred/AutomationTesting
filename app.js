@@ -6,3 +6,4 @@ function somemore() {
   return sum(x, y) + 3;
 }
 module.exports = sum;
+module.exports = somemore;
