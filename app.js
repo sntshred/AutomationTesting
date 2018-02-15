@@ -1,6 +1,6 @@
-function sum(a, b) {
+var sum = function(a, b) {
   return a + b;
-}
+};
 
 function somemore() {
   return sum(x, y) + 3;
